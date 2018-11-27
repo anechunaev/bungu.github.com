@@ -52,11 +52,11 @@ function initState() {
 		state.cardsInGame = (new Array(state.sectors)).join().split(',').map((_, i) => i);
 		state.defaultClassNames = localStorage.getItem('defaultClassNames') ? localStorage.getItem('defaultClassNames').split('\n') : defaultClassNames;
 
-		$('#sectors').attr('value', +localStorage.getItem('sectors'));
-		$('#time').attr('value', +localStorage.getItem('time'));
-		$('#spins').attr('value', +localStorage.getItem('spins'));
-		$('#body').attr('value', localStorage.getItem('body'));
-		$('#cards-classes').val(localStorage.getItem('defaultClassNames'));
+		$('#sectors').attr('value', state.sectors);
+		$('#time').attr('value', state.time);
+		$('#spins').attr('value', state.spins);
+		$('#body').attr('value', localStorage.getItem('body') || '#333');
+		$('#cards-classes').val(state.defaultClassNames);
 	}
 }
 
