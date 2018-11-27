@@ -56,7 +56,7 @@ function initState() {
 		$('#time').attr('value', state.time);
 		$('#spins').attr('value', state.spins);
 		$('#body').attr('value', localStorage.getItem('body') || '#333');
-		$('#cards-classes').val(state.defaultClassNames);
+		$('#cards-classes').val(state.defaultClassNames.join('\n'));
 	}
 }
 
