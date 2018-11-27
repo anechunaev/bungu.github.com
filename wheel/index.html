@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<div class="trigger">⚙️</div>
+	
+	
+	<div class="wrapper" id="wrapper">
+		<svg viewBox="0 0 100 100" id="wheel-base" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+			<defs>
+				<symbol viewBox="0 0 100 100">
+					<path id="sector" d="M50 50L71.69418246305688 4.9515544412507495A50 50 0 0 0 50 0Z" />
+				</symbol>
+			</defs>
+			<g id="wheel-base-group">
+				<use href="#sector" transform="rotate(0, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(25.71, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(51.42, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(77.13, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(102.84, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(128.55, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(154.26, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(179.97, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(205.68, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(231.39, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(257.1, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(282.81, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(308.52, 50, 50)" class="sector" />
+				<use href="#sector" transform="rotate(334.23, 50, 50)" class="sector" />
+			</g>
+			<circle cx="50" cy="50" r="25" fill="rgba(0,0,0,.1)" />
+			<circle cx="50" cy="50" r="47.5" fill="none" stroke="rgba(0,0,0,.1)" stroke-width="5" />
+		</svg>
+		<div id="cards">
+			<div style="transform:rotate(12.86deg)" class="card blue one"></div>
+			<div style="transform:rotate(38.57deg)" class="card yellow two"></div>
+			<div style="transform:rotate(64.29deg)" class="card red three"></div>
+			<div style="transform:rotate(90deg)" class="card green four"></div>
+			<div style="transform:rotate(115deg)" class="card blue five"></div>
+			<div style="transform:rotate(141.41deg)" class="card black"></div>
+			<div style="transform:rotate(167.12deg)" class="card yellow six"></div>
+			<div style="transform:rotate(192.83deg)" class="card red seven"></div>
+			<div style="transform:rotate(218.54deg)" class="card green eight"></div>
+			<div style="transform:rotate(244.25deg)" class="card blue nine"></div>
+			<div style="transform:rotate(270deg)" class="card yellow ten"></div>
+			<div style="transform:rotate(295.67deg)" class="card red eleven"></div>
+			<div style="transform:rotate(321.38deg)" class="card green twelve"></div>
+			<div style="transform:rotate(347.19deg)" class="card white"></div>
+		</div>
+		<div class="wheel" id="wheel">
+			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+				<path d="M50 5L50 50h-7Z" fill="#c1792a" />
+				<path d="M50 5L50 50h7Z" fill="#fcb533" />
+			</svg>
+		</div>
+		<div class="arrow">
+			<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+				<defs>
+					<radialGradient id="r" cx="50%" cy="50%" r="50%">
+						<stop offset="0%" stop-color="#fff"/>
+						<stop offset="50%" stop-color="#fbb258"/>
+						<stop offset="80%" stop-color="#f99e28"/>
+						<stop offset="100%" stop-color="#f89a22"/>
+					</radialGradient>
+				</defs>
+				<circle cx="50" cy="50" r="25" fill="url(#r)" stroke="#C1792A" stroke-width="5" />
+			</svg>
+		</div>
+	</div>
+
+
+
+	<div class="options">
+		<div class="shadow"></div>
+		<div class="modal">
+			<div>
+				<label>
+					<p>Количество секторов</p>
+					<input id="sectors" type="number" value="14" autocomplete="off" />
+				</label>
+				<label>
+					<p>Время анимации (сек)</p>
+					<input id="time" type="number" value="10" autocomplete="off" />
+				</label>
+				<label>
+					<p>Количество оборотов стрелки</p>
+					<input id="spins" type="number" value="50" autocomplete="off" />
+				</label>
+				<label>
+					<p>Цвет фона</p>
+					<input id="body" type="text" value="#333" autocomplete="off" />
+				</label>
+				<label>
+					<p>Имена css-классов карточек</p>
+					<textarea id="cards-classes"autocomplete="off">
+card green eight
+card blue nine
+card yellow ten
+card red eleven
+card green twelve
+card white
+card blue one
+card yellow two
+card red three
+card green four
+card blue five
+card black
+card yellow six
+card red seven
+					</textarea>
+				</label>
+			</div>
+			<div>
+				<p>Карточки в игре?</p>
+				<div id="in-game-list"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="spin.js"></script>
+</body>
+</html>
