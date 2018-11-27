@@ -79,6 +79,7 @@ function describeArc(x, y, radius, startAngle, endAngle){
 
 function initOptions() {
 	const list = $('#in-game-list');
+	list.empty();
 	for(let i = 0; i < state.sectors; i++) {
 		const label = document.createElement('label');
 		const cb = document.createElement('input');
