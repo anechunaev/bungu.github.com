@@ -204,12 +204,16 @@ $(document).ready(() => {
 			easing: 'cubic-bezier(.08,.82,.17,1)',
 			fill: 'forwards',
 		});
+
+		$('#sound')[0].play();
 	
 		setTimeout(() => {
 			state.lastSpinDeg = ang + state.step/2;
 			state.status = 'paused';
 			state.cardsInGame.splice(state.cardsInGame.indexOf(sectorId), 1);
 			$(`#in-game-list label:nth-child(${sectorId + 1}) input`).prop('checked', false);
+			$('#sound')[0].pause();
+			$('#sound')[0].currentTime = 0;
 		}, state.time * 1000);
 	});
 
