@@ -191,9 +191,9 @@ $(document).ready(() => {
 		if (state.cardsInGame.length === 0) return;
 
 		let sectorId = getRandomSector();
-		state.cardsInGame.forEach(id => {
-			if (sectorId === id) play = true;
-		});
+		// state.cardsInGame.forEach(id => {
+		//	if (sectorId === id) play = true;
+		// });
 
 		state.status = 'running';
 		state.prevCard = sectorId;
