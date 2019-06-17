@@ -1,3 +1,5 @@
+'use strict';
+
 const wheel = $('#wheel');
 const wrapper = $('#wrapper');
 const defaultClassNames = [
@@ -17,7 +19,7 @@ const defaultClassNames = [
 	'card red seven',
 ];
 
-let state = {
+var state = {
 	sectors: +$('#sectors').attr('value'),
 	time: +$('#time').attr('value'),
 	spins: +$('#spins').attr('value'),
