@@ -8,8 +8,8 @@ body {
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%, -50%);
-	width: 210px;
-	height: 140px;
+	width: 60vh;
+	height: 30vh;
 	perspective: 1000px;
 }
 
@@ -23,35 +23,35 @@ body {
 
 .card {
 	position: absolute;
-	width: 210px;
-	height: 140px;
+	width: 60vh;
+	height: 30vh;
 	border: 1px solid #333;
 	box-sizing: border-box;
-	background: #1d1e22;
-	font: 8pt/20pt sans-serif;
+	background: rgba(50, 50, 50, .75);
+	font: 4vh/4vh sans-serif;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .one {
-	border-color: #600;
+	background: #FFE59E;
 }
 
 .two {
-	border-color: #360;
+	background: #E8C1C2;
 }
 
 .three {
-	border-color: #630;
+	background: #96C268;
 }
 
 .four {
-	border-color: #036;
+	background: #A6DAD2;
 }
 
 .selected {
-	border-color: #444;
+	background: rgba(50, 50, 50, .8);
 }
 
 
