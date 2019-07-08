@@ -7,7 +7,6 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
 	<title>Document</title>
 	<link rel="stylesheet" href="style.css" />
-	<script src="jquery-3.3.1.min.js"></script>
 </head>
 
 <body>
@@ -15,47 +14,36 @@
 
 
 	<div class="wrapper">
-		<div class="frame">
-			<div class="card one">1</div>
-			<div class="card two">2</div>
-			<div class="card three">3</div>
-			<div class="card four">4</div>
-			<div class="card one">5</div>
-			<div class="card two">6</div>
-			<div class="card three">7</div>
-			<div class="card four">8</div>
-		</div>
+		<div class="frame"></div>
 	</div>
 
 
-	<!-- <div class="options">
+	<div class="options">
 		<div class="shadow"></div>
 		<div class="modal">
 			<div>
 				<label>
 					<p>Время анимации (сек)</p>
-					<input id="time" type="number" value="10" autocomplete="off" />
+					<input id="time" type="number" value="3" autocomplete="off" />
+				</label>
+				<label>
+					<p>Кол-во полных вращений</p>
+					<input id="spins" type="number" value="2" autocomplete="off" />
 				</label>
 				<label>
 					<p>Цвет фона</p>
-					<input id="body" type="text" value="#333" autocomplete="off" />
+					<input id="body" type="text" value="#1d1e22" autocomplete="off" />
 				</label>
 				<label>
-					<p></p>
-					<textarea id="cards" autocomplete="off">
-						Авиа
-						ПТТ
-						Автобусы
-						Туры
-						Приключения
-						B2B
-						ЖД
-						Электрички
-					</textarea>
+					<p>Названия карточек</p>
+					<textarea id="cards" autocomplete="off"></textarea>
 				</label>
+
+				<p>Доступные карточки</p>
+				<div id="available"></div>
 			</div>
 		</div>
-	</div> -->
+	</div>
 
 	<script src="spin.js"></script>
 </body>
