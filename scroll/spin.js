@@ -3,7 +3,7 @@
 const state = {
 	prevKey: null,
 	selectedKeys: [],
-	bodyColor: '#1d1e22',
+	bodyColor: '#fff',
 	cardElements: [],
 };
 

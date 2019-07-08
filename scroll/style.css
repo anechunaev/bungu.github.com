@@ -1,5 +1,5 @@
 body {
-	background: #1d1e22;
+	background: #fff;
 	font: 10pt/12pt sans-serif;
 }
 
@@ -53,6 +53,17 @@ body {
 .selected {
 	background: rgba(50, 50, 50, .8);
 }
+
+
+
+.logo {
+	position: absolute;
+	top: 3vh;
+	right: 3vh;
+	width: 30vh;
+	height: 10vh;
+}
+
 
 
 /*
