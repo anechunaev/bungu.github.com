@@ -1,0 +1,51 @@
+body {
+	background: #1d1e22;
+}
+
+.wrapper {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 210px;
+	height: 140px;
+	perspective: 1000px;
+}
+
+.frame {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+  transition: transform 0.2s linear;
+}
+
+.card {
+	position: absolute;
+	width: 210px;
+	height: 140px;
+	border: 1px solid #333;
+	box-sizing: border-box;
+	transition: transform 0.2s linear;
+	background: #1d1e22;
+}
+
+.one {
+	border-color: #600;
+}
+
+.two {
+	border-color: #360;
+}
+
+.three {
+	border-color: #630;
+}
+
+.four {
+	border-color: #036;
+}
+
+#b {
+	position: absolute;
+}
